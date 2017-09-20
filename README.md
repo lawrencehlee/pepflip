@@ -10,7 +10,14 @@ Prerequisites:
 
 Usage:
 
-- Make sure you fulfill the prereqs.
-- Download the batch file (pepflip.bat) and put it in the same directory as your pdfs.
-- Double-click the file to run it.
-- Your resulting pepflipped pdfs will be in the "pepflipped" directory. Note that any files of the same name in that directory will be overwritten!
+- Make sure you fulfill the prereqs
+- Download the batch file (pepflip.bat) and put it in the same directory as your pdfs
+- Double-click the file to run it
+- Your resulting pepflipped pdfs will be in the "pepflipped" directory
+
+Caveats:
+
+- Note that any files of the same name in that directory will be overwritten
+- Avoid running it with your full score or other large pdfs, as it'll take... a while
+- Caveat emptor
+- Takes around 3 minutes for 15 half- or full-page pdfs
