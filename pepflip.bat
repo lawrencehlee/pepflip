@@ -14,7 +14,7 @@
 :::                                                                   \$$                                              
 for /f "delims=: tokens=*" %%A in ('findstr /b ::: "%~f0"') do @echo(%%A
 
-echo PEPFLIP v0.1
+echo PEPFLIP v0.2
 echo Authors: Kirk Wang, Lawrence Lee
 echo.
 
@@ -38,7 +38,8 @@ for %%i in (*) do (
 		magick convert -append "%%~ni.upright.tif" "%%~ni.rotated.tif" "%%~ni.appended.tif"
 
 		echo Creating finalized pdf...
-		magick convert "%%~ni.appended.tif" ".\pepflipped\%%~ni.pdf"
+		magick convert -gravity Center -extent 5100x6600 "%%~ni.appended.tif" "%%~ni.extended.tif"
+		magick convert "%%~ni.extended.tif" ".\pepflipped\%%~ni.pdf"
 
 		del *.tif
 		echo.
