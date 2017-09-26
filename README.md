@@ -20,4 +20,4 @@ Caveats:
 - Note that any files of the same name in that directory will be overwritten
 - Avoid running it with your full score or other large pdfs, as it'll take... a while
 - Caveat emptor
-- Takes around 3 minutes for 15 half- or full-page pdfs
+- Takes around 2 minutes for 15 half- or full-page pdfs
